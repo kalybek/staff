@@ -2,6 +2,7 @@
 use Phalcon\Session\Adapter\Files as Session;
 class  SessionController extends  ControllerBase{
 
+
         private function  _registerSession($id,$login,$password){
             $this ->session->set(
                 'auth',[
@@ -9,6 +10,7 @@ class  SessionController extends  ControllerBase{
                     'login' => $login,
                     'password' => $password
                 ]
+
             );
 
         }

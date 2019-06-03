@@ -1,16 +1,10 @@
 <?php
+use Phalcon\Mvc\Router;
 
-$router = $di->getRouter();
+// Create the router
+$router = new Router();
 
-$router->add(
-    '/profile',
-    [
 
-        'controller' => 'profile',
-        'action'     => 'index',
-    ]
-);
 
-// Define your routes here
 
 $router->handle();
